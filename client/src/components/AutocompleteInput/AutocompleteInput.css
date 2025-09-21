@@ -1,0 +1,77 @@
+.autocomplete-container {
+  position: relative;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.autocomplete-container.focused {
+  border: 2px solid blue;
+}
+
+.autocomplete-label {
+  font-size: 10px;
+  display: block;
+  background: white;
+  margin-right: 3px;
+  position: absolute;
+  margin-top: -12px;
+  padding: 0 3px;
+}
+
+.autocomplete-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.autocomplete-input {
+  border: none !important;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.dropdown-icon {
+  font-size: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.autocomplete-dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: none;
+  left: 0px;
+  margin-top: 4px;
+}
+
+.autocomplete-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.autocomplete-option.bordered {
+  border-bottom: 1px solid #eee;
+}
+
+.autocomplete-option:hover {
+  background-color: #e6e6e6;
+}
+
+.autocomplete-option:not(:hover) {
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,8 @@
+bin/
+obj/
+*.user
+*.vs
+.git/
+.vscode/
+node_modules/
+.env
